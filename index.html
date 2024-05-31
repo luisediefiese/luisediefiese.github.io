@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AR Model Viewer</title>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
-    model-viewer {
-      width: 100%;
-      height: 100%;
-      max-width: 600px;
-      max-height: 600px;
-    }
-    .qr-code {
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .ar-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #007AFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <model-viewer 
-    src="https://example.com/path/to/your/model.glb" 
-    alt="A 3D model of an object" 
-    ar 
-    ar-modes="scene-viewer quick-look" 
-    environment-image="neutral" 
-  
+    <h1>AR Viewer Example</h1>
+    <p>Click the button below to view the 3D model in AR.</p>
+    <a rel="ar" href="https://your-server.com/path/to/your-model.usdz">
+        <button class="ar-button">View in AR</button>
+    </a>
+</body>
+</html>
