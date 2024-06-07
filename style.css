@@ -64,8 +64,7 @@
     background-position: 500px 1000px, 400px 800px, 0px 300px;
   }
 }
-   <style>
-        
+
        
         body {
             font-family: MS Courier New, sans-serif;
@@ -102,4 +101,3 @@
         .a {
             display: inline-block;
         }
-    </style>
